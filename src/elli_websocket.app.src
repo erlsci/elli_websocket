@@ -6,9 +6,11 @@
   {applications, [kernel, stdlib, elli]},
   {env,          []},
 
+  {pkg_name, elli_ws_undertone},
   {maintainers,  ["elli-lib team"]},
   {licenses,     ["Apache 2.0"]},
   {links, [
-    {"GitHub", "https://github.com/elli-lib/elli_websocket"}
-  ]}
+    {"GitHub", "https://github.com/ut-proj/elli_websocket"}
+  ]},
+  {exclude_files, ["src/#*"]}
 ]}.

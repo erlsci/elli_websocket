@@ -16,8 +16,8 @@
 [github tags badge]: https://img.shields.io/github/tag/elli-lib/elli_websocket.svg
 [erlang badge]: https://img.shields.io/badge/erlang-%E2%89%A521.0-red.svg
 [erlang downloads]: http://www.erlang.org/downloads
-[gh-actions-badge]: https://github.com/elli-lib/elli_websocket/workflows/ci%2Fcd/badge.svg
-[gh-actions]: https://github.com/elli-lib/elli_websocket/actions
+[gh-actions-badge]: https://github.com/ut-proj/elli_websocket/workflows/ci%2Fcd/badge.svg
+[gh-actions]: https://github.com/ut-proj/elli_websocket/actions
 [coveralls badge]: https://coveralls.io/repos/github/elli-lib/elli_websocket/badge.svg?branch=develop
 [coveralls link]: https://coveralls.io/github/elli-lib/elli_websocket?branch=develop
 [license badge]: https://img.shields.io/hexpm/l/elli_websocket.svg
@@ -30,7 +30,16 @@ You can add `elli_websocket` to your application by adding it as a dependency al
 ```erlang
 {deps, [
   {elli, "3.1.0"},
-  {elli_websocket, "0.1.1"}
+  {elli_ws_undertone, "0.1.2"}
+]}.
+```
+
+Note that once [this PR]() is merged and a release is pushed to hex.pm, you'll be able to go back to the standard usage:
+
+```erlang
+{deps, [
+  {elli, "3.1.0"},
+  {elli_websocket, "x.y.z"}
 ]}.
 ```
 
